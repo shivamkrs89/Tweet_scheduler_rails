@@ -13,8 +13,9 @@
 
   <body>
   <%= render partial: "shared/navbar" %> <!--navbar starts with _ (underscore as it is partilly rendered) -->
-  <div class="container">
-    <%= yield %>
+<div class="container">
+<%= render partial:"shared/flash" %>
+  <%= yield %>
     </div>
   </body>
 </html>
